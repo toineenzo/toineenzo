@@ -177,7 +177,7 @@
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                                         <path fill-rule="evenodd" d="M2.75 1.5a.25.25 0 00-.25.25v12.5c0 .138.112.25.25.25h10.5a.25.25 0 00.25-.25V4.664a.25.25 0 00-.073-.177l-2.914-2.914a.25.25 0 00-.177-.073H2.75zM1 1.75C1 .784 1.784 0 2.75 0h7.586c.464 0 .909.184 1.237.513l2.914 2.914c.329.328.513.773.513 1.237v9.586A1.75 1.75 0 0113.25 16H2.75A1.75 1.75 0 011 14.25V1.75zm7 1.5a.75.75 0 01.75.75v1.5h1.5a.75.75 0 010 1.5h-1.5v1.5a.75.75 0 01-1.5 0V7h-1.5a.75.75 0 010-1.5h1.5V4A.75.75 0 018 3.25zm-3 8a.75.75 0 01.75-.75h4.5a.75.75 0 010 1.5h-4.5a.75.75 0 01-.75-.75z"/>
                                     </svg>
-                                    17.2k added, 10.6k removed
+                                    10.8k added, 10.7k removed
                                 </div>
                             </section>
                             <section>
@@ -265,15 +265,15 @@
             </section>
             <section class="column">
                 <h3 class="field">Recently used languages</h3>
-                <small>estimation from 10kb of code in 24 edited files across 33 commits over last 0 days</small>
+                <small>estimation from 19.3kb of code in 32 edited files across 49 commits over last 0 days</small>
                 <svg class="bar" xmlns="http://www.w3.org/2000/svg" width="920" height="8">
                     <mask id="languages-bar">
                         <rect x="0" y="0" width="920" height="8" fill="white" rx="5"/>
                     </mask>
                     <rect mask="url(#languages-bar)" x="0" y="0" width="0" height="8" fill="#d1d5da"/>
-                    <rect mask="url(#languages-bar)" x="0" y="0" width="530.851863133313" height="8" fill="#878787"/>
-                    <rect mask="url(#languages-bar)" x="530.851863133313" y="0" width="302.2763732358615" height="8" fill="#41b883"/>
-                    <rect mask="url(#languages-bar)" x="833.1282363691746" y="0" width="86.87176363082546" height="8" fill="#4F5D95"/>
+                    <rect mask="url(#languages-bar)" x="0" y="0" width="419.7042870941377" height="8" fill="#878787"/>
+                    <rect mask="url(#languages-bar)" x="419.7042870941377" y="0" width="278.68638086039084" height="8" fill="#41b883"/>
+                    <rect mask="url(#languages-bar)" x="698.3906679545287" y="0" width="221.60933204547143" height="8" fill="#4F5D95"/>
                 </svg>
                 <div class="field center horizontal-wrap fill-width">
                     <div class="field center no-wrap language">
@@ -481,13 +481,34 @@
                                     </div>
                                 </div>
                                 <div class="details">
-                                    <div>on branch <span class="code">master</span></div>
+                                    <div>on branch <span class="code">patch-2</span></div>
                                     <div class="commit">
-                                        <div class="sha">#4ac1a04</div>
-                                        <div class="message">Localize Support.vue</div>
+                                        <div class="sha">#87c2e4e</div>
+                                        <div class="message">Brand names AdminMenuHandler.php</div>
                                     </div>
                                 </div>
-                                <div class="timestamp">7 Dec 2024, 21:11:02</div>
+                                <div class="timestamp">7 Dec 2024, 21:49:19</div>
+                            </section>
+                        </div>
+                        <div class="row fill-width">
+                            <section class="activity">
+                                <div class="field">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+                                        <path fill-rule="evenodd" d="M10.5 7.75a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0zm1.43.75a4.002 4.002 0 01-7.86 0H.75a.75.75 0 110-1.5h3.32a4.001 4.001 0 017.86 0h3.32a.75.75 0 110 1.5h-3.32z"/>
+                                    </svg>
+                                    <div class="content">
+                                        Pushed 1 commit in
+                                        <span class="repo">toineenzo/fluent-smtp</span>
+                                    </div>
+                                </div>
+                                <div class="details">
+                                    <div>on branch <span class="code">patch-1</span></div>
+                                    <div class="commit">
+                                        <div class="sha">#8bf8204</div>
+                                        <div class="message">Changed Brand names and added formerly names in readme.txt</div>
+                                    </div>
+                                </div>
+                                <div class="timestamp">7 Dec 2024, 21:44:00</div>
                             </section>
                         </div>
                         <div class="row fill-width">
@@ -504,11 +525,11 @@
                                 <div class="details">
                                     <div>on branch <span class="code">master</span></div>
                                     <div class="commit">
-                                        <div class="sha">#c01774b</div>
-                                        <div class="message">Localize NotificationManager.vue</div>
+                                        <div class="sha">#1b77fbe</div>
+                                        <div class="message">Localize config.php</div>
                                     </div>
                                 </div>
-                                <div class="timestamp">7 Dec 2024, 21:07:42</div>
+                                <div class="timestamp">7 Dec 2024, 21:29:02</div>
                             </section>
                         </div>
                         <div class="row fill-width">
@@ -525,11 +546,11 @@
                                 <div class="details">
                                     <div>on branch <span class="code">master</span></div>
                                     <div class="commit">
-                                        <div class="sha">#27d051a</div>
-                                        <div class="message">Fix</div>
+                                        <div class="sha">#fe35ba9</div>
+                                        <div class="message">Localize Smtp.vue</div>
                                     </div>
                                 </div>
-                                <div class="timestamp">7 Dec 2024, 21:07:17</div>
+                                <div class="timestamp">7 Dec 2024, 21:25:57</div>
                             </section>
                         </div>
                         <div class="row fill-width">
@@ -546,32 +567,11 @@
                                 <div class="details">
                                     <div>on branch <span class="code">master</span></div>
                                     <div class="commit">
-                                        <div class="sha">#6aa5688</div>
-                                        <div class="message">Localize AdminMenuHandler.php</div>
+                                        <div class="sha">#9df098b</div>
+                                        <div class="message">Localize _ConnectionSelector.vue</div>
                                     </div>
                                 </div>
-                                <div class="timestamp">7 Dec 2024, 21:04:44</div>
-                            </section>
-                        </div>
-                        <div class="row fill-width">
-                            <section class="activity">
-                                <div class="field">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
-                                        <path fill-rule="evenodd" d="M10.5 7.75a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0zm1.43.75a4.002 4.002 0 01-7.86 0H.75a.75.75 0 110-1.5h3.32a4.001 4.001 0 017.86 0h3.32a.75.75 0 110 1.5h-3.32z"/>
-                                    </svg>
-                                    <div class="content">
-                                        Pushed 1 commit in
-                                        <span class="repo">toineenzo/fluent-smtp</span>
-                                    </div>
-                                </div>
-                                <div class="details">
-                                    <div>on branch <span class="code">master</span></div>
-                                    <div class="commit">
-                                        <div class="sha">#29e1d87</div>
-                                        <div class="message">Fix</div>
-                                    </div>
-                                </div>
-                                <div class="timestamp">7 Dec 2024, 20:55:24</div>
+                                <div class="timestamp">7 Dec 2024, 21:24:23</div>
                             </section>
                         </div>
                     </section>
@@ -651,7 +651,7 @@
             </section>
             <footer>
                 <span>These metrics include private contributions</span>
-                <span>Last updated 7 Dec 2024, 21:11:12 (timezone Europe/Amsterdam) with lowlighter/metrics@3.34.0</span>
+                <span>Last updated 7 Dec 2024, 22:09:23 (timezone Europe/Amsterdam) with lowlighter/metrics@3.34.0</span>
             </footer>
         </div>
         <div xmlns="http://www.w3.org/1999/xhtml" id="metrics-end"></div>
