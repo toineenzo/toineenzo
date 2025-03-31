@@ -13,12 +13,12 @@ Thanks!
     (__) (__)   (__)\_)-' '-(_/ (_")  (_/(__) (__) 
 
 ### Socials 📲
-- [WP.org](https://profiles.wordpress.org/toineenzo/)
+- [WP.org](https://toine.click/wordpress)
 - [Portfolio](https://toine.zip)
-- [E-mail](mailto:hi@toine.zip)
-- [LinkedIn](https://www.linkedin.com/in/toinerademacher)
+- [E-mail](https://toine.click/mail)
+- [LinkedIn](https://toine.click/linkedin)
 - [Vimeo](https://vimeo.com/toineenzo)
-- [Instagram](https://instagram.com/toineenzo)
+- [Instagram](https://toine.click/instagram)
 
 ### Here are some stupid stats 🤓
 
