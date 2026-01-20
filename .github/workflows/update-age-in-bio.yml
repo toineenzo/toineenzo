@@ -1,0 +1,99 @@
+name: Update age in profile README
+
+on:
+  schedule:
+    # Runs once a year on Sep 7 at 03:00 UTC
+    - cron: "0 3 7 9 *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-age-readme
+  cancel-in-progress: false
+
+jobs:
+  update-age:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Compute age
+        id: age
+        shell: bash
+        run: |
+          set -euo pipefail
+          BIRTHDATE="1998-09-06"  # YYYY-MM-DD
+
+          TODAY="$(date -u +%F)"
+
+          BY="$(date -u -d "$BIRTHDATE" +%Y)"
+          BM="$(date -u -d "$BIRTHDATE" +%m)"
+          BD="$(date -u -d "$BIRTHDATE" +%d)"
+
+          TY="$(date -u -d "$TODAY" +%Y)"
+          TM="$(date -u -d "$TODAY" +%m)"
+          TD="$(date -u -d "$TODAY" +%d)"
+
+          AGE=$((TY - BY))
+          if [[ "$TM$TD" < "$BM$BD" ]]; then
+            AGE=$((AGE - 1))
+          fi
+
+          echo "age=$AGE" >> "$GITHUB_OUTPUT"
+          echo "Computed age: $AGE"
+
+      - name: Update README.md between markers
+        shell: bash
+        env:
+          AGE: ${{ steps.age.outputs.age }}
+        run: |
+          set -euo pipefail
+
+          if [[ ! -f README.md ]]; then
+            echo "README.md not found in repo root."
+            exit 1
+          fi
+
+          python3 - << 'PY'
+import re, pathlib, os, sys
+
+age = os.environ["AGE"]
+path = pathlib.Path("README.md")
+text = path.read_text(encoding="utf-8")
+
+pattern = r"(<!--\s*AGE_START\s*-->)(.*?)(<!--\s*AGE_END\s*-->)"
+m = re.search(pattern, text, flags=re.DOTALL)
+
+if not m:
+    print("Markers <!-- AGE_START --> and <!-- AGE_END --> not found in README.md")
+    sys.exit(1)
+
+new_text = re.sub(pattern, r"\1"+age+r"\3", text, flags=re.DOTALL)
+
+if new_text == text:
+    print("No change needed.")
+else:
+    path.write_text(new_text, encoding="utf-8")
+    print("README.md updated.")
+PY
+
+      - name: Commit & push (only if changed)
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          if git diff --quiet; then
+            echo "No changes to commit."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          git add README.md
+          git commit -m "chore: update age in README"
+          git push
