@@ -1,7 +1,7 @@
 name: Update profile stats
 on:
   # Schedule updates (every day at 3am)
-  schedule: [{cron: "0 3 * * *"}]
+  schedule: [{cron: "0 3 */2 * *"}]
   # Lines below let you run workflow manually and on each commit (optional)
   workflow_dispatch:
   push: {branches: ["main"]}
