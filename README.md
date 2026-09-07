@@ -1,5 +1,5 @@
 ### Hi there 👋
-My name is Toine, I'm currently <!-- AGE_START -->27<!-- AGE_END --> years old and living in Utrecht, The Netherlands 🇳🇱. I gratuated for the study Communication and Multimedia Design at Hogeschool Utrecht, basically graphical/concept design 🖌️💻.
+My name is Toine, I'm currently <!-- AGE_START -->28<!-- AGE_END --> years old and living in Utrecht, The Netherlands 🇳🇱. I gratuated for the study Communication and Multimedia Design at Hogeschool Utrecht, basically graphical/concept design 🖌️💻.
 
 On Github I mostly provide feedback and translations for all types of apps and am very active in the WordPress community. Espcially Elementor. Be sure to check out my WP.org profile, portfolio site and other links.
 Thanks!
